@@ -1,0 +1,193 @@
+body {
+  width: 816px;
+  height: 1054px;
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.letter {
+}
+
+.header {
+  text-align: center;
+  padding: 1em 0 2em 0;
+
+  h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 1.5em;
+  }
+
+  .role {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+
+  .point {
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+$content-l-width: 0.31;
+
+.content-l {
+  width: percentage($content-l-width);
+  background: rgb(86 88 89 / 6%);
+  min-height: 900px;
+  padding: 1em 1em;
+}
+
+@mixin content-font {
+  font-size: 0.8em;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  line-height: 1.3em;
+}
+
+.content-r {
+  width: percentage(1-$content-l-width);
+  border-top: solid #9e9999 1px;
+  padding: 1em 1em;
+
+  .work-exp {
+    margin: 1em 0 1em 0;
+
+    .job-title {
+      font-family: 'Oxygen', sans-serif;
+      font-weight: 700;
+      font-size: 0.8em;
+      text-transform: capitalize;
+    }
+
+    .job-company {
+      font-family: 'Oxygen', sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 0.8em;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    .job-desc {
+        @include content-font;
+      ul {
+        padding: 0 0 0 1.3em;
+      }
+    }
+  }
+}
+
+.edu {
+  ul {
+    display: block;
+    padding: 0 0 0 0;
+    list-style: none;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.75em;
+    $margin-top-bottom:2em;
+    li {
+      font-family: 'Oxygen', sans-serif;
+      margin-top: $margin-top-bottom;
+
+      p {
+        line-height: 0.7em;
+      }
+
+      .edu-title {
+      }
+
+      .edu-uni {
+        font-size: 1.2em;
+      }
+
+      .edu-year {
+        font-weight: 400;
+        font-size: 0.8em;
+      }
+    }
+
+    li:last-child {
+      margin-bottom: $margin-top-bottom;
+    }
+  }
+}
+
+.lang {
+    .lang-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      align-items: center;
+      line-height: 2em;
+
+      .lang-item-name {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 0.8em;
+        padding: 0 2em 0 0;
+      }
+      .progress-container {
+        border: none;
+      }
+
+      .progress-bar {
+        height: 5px;
+        border-radius: 4px;
+        text-align: center;
+        background: rgb(45 48 49 / 35%);
+        color: white;
+      }
+    }
+}
+
+.profile {
+  .profile-desc {
+    @include content-font;
+  }
+}
+
+.expertise {
+  ul {
+    @include content-font;
+    text-align: left;
+    padding: 0 0 0 1.3em;
+  }
+}
+
+.skills {
+  .skills-content {
+    @include content-font;
+    text-align: left;
+  }
+}
+
+.contact {
+    ul {
+      @include content-font;
+      padding: 0 0 0 0;
+      list-style: none;
+    }
+
+    li {
+      line-height: 1.8em;
+      .contact-value {
+      }
+    }
+}

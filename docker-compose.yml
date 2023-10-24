@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "3007:80"
+    volumes:
+      - ./nginx-conf:/etc/nginx/conf.d
+      - ./build:/var/www/html
