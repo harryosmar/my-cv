@@ -95,4 +95,4 @@ const data = {
 }
 ```
 
-![cv](https://github.com/harryosmar/my-cv/blob/master/cv.jpg?raw=true)
+![cv](https://github.com/harryosmar/my-cv/blob/master/cv.jpeg?raw=true)
