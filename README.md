@@ -1,46 +1,98 @@
-# Getting Started with Create React App
+# My Cv
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+From `json` to `cv`
 
-## Available Scripts
+```js
+const data = {
+    name: "Harry Osmar Sitohang",
+        role: "Senior Principle Engineer",
+        profile: "Experienced engineering leader with a proven track record in designing and implementing complex systems across [specific industry or domain]. Adept at driving innovation, managing cross-functional teams, and delivering high-impact solutions. Demonstrated expertise in [key technical skills or technologies], coupled with a deep understanding of industry best practices. Known for optimizing processes, reducing costs, and enhancing overall efficiency. Strong communicator and collaborator with a passion for mentoring and developing talent.",
+        educations: [
+        {
+            title: "Bachelor's Degree in Computer Science",
+            university: "BINUS University",
+            year: "2012-2015",
+        },
+        {
+            title: "Diploma",
+            university: "Del Polytechnic of Informatics",
+            year: "2007-2010",
+        },
+    ],
+        languages: [
+        {
+            name: "Bahasa",
+            progress: 100,
+        },
+        {
+            name: "English",
+            progress: 85,
+        },
+    ],
+        experiences: [
+        {
+            "title": "Senior Principle Engineer",
+            "company": "Prakerja",
+            "dates": "2021-2023",
+            "responsibilities": [
+                "Successfully engineered and maintained systems handling a staggering 47 million registered users over the past three years. This involved [briefly describe the key responsibilities and challenges you faced]",
+                "Successfully designed and implemented a microservices architecture that effortlessly scales, ensuring robust performance and easy maintenance, even during periods of rapid growth.",
+                "Led the development of a centralized logging and monitoring solution for microservices, utilizing [mention specific tools, e.g., ELK stack, Prometheus], providing real-time insights into system health and performance.",
+            ],
+        },
+        {
+            "title": "Senior Fullstack Engineer",
+            "company": "Wayfair",
+            "dates": "2018-2019",
+            "responsibilities": [
+                "Engineered and managed a high-traffic, multi-server platform catering to a diverse global user base across various timezones. This involved overseeing [briefly describe the key responsibilities and challenges you faced].",
+                "Championed a culture of test-first development, resulting in a unit test coverage of 70% across the codebase and a significant reduction in bug reports and an overall increase in software reliability. This shift led to a [specific metric, e.g., 30% decrease in post-release bug reports].",
+            ],
+        },
+        {
+            "title": "Technical Lead Engineer",
+            "company": "OLX",
+            "dates": "2014-2018",
+            "responsibilities": [
+                "Orchestrated the technical infrastructure to accommodate a daily influx of up to 100,000 active users across web, Android, and iOS applications. This entailed [briefly describe the key responsibilities and challenges you faced].",
+                "Established a robust monitoring and alerting system to track key performance indicators, promptly identifying and resolving potential performance bottlenecks.",
+                "Successfully initiated the adoption of Docker in our production environment, revolutionizing our deployment process. This transition led to streamlined, consistent, and efficient deployments, significantly reducing downtime and ensuring a more resilient and agile production environment.",
+            ],
+        },
+    ],
+        expertise: [
+        "Microservices Architecture: proficient in designing and implementing microservices architectures, emphasizing scalability, resilience, and maintainability.",
+        "DevOps and CI/CD: Deep understanding of DevOps practices and tools. Experienced Implemented robust CI/CD pipelines to automate build, test, and deployment processes.",
+        "Monitoring and Alerting: Experienced implemented comprehensive monitoring and alerting solutions systems.",
+        "Team Leadership and Mentoring: Providing technical direction and mentorship. Fostered a culture of technical excellence, knowledge sharing, and continuous learning.",
+    ],
+        skills: [
+        "golang",
+        "java",
+        "php",
+        "nodejs",
+        "kubernetes",
+        "prometheus grafana",
+        "ELK datadog",
+        "Aliyun AWS GCP",
+        "S3 OSS",
+        "istio",
+        "kong",
+        "kafka NSQ SNS SQS rabbitmq",
+        "redis memcached",
+        "elastic solr",
+        "react",
+        "grpc restapi",
+        "TDD BDD selenium",
+        "Jenkins ansible",
+        "Design Pattern SOLID Clean Code"
+    ],
+        contact: {
+        email: "harryosmarsitohang@gmail.com",
+            phone: "+6281397738684",
+            linkedIn: "https://bit.ly/3FrxiSW",
+    },
+}
+```
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![cv](https://github.com/harryosmar/my-cv/blob/master/cv.jpg?raw=true)
