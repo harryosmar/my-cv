@@ -13,7 +13,7 @@ function Edu({title, university, year}: EducationEntity) {
 
 function Edus({educations = []}: { educations?: EducationEntity[] }) {
     return (
-        <div className="edu">
+        <div className="edu left-side-box">
             <h2 className="point">education</h2>
             <ul>
                 {educations.map((v) => <Edu {...v}></Edu>)}

@@ -9,7 +9,7 @@ body {
 
 .header {
   text-align: center;
-  padding: 1em 0 2em 0;
+  padding: 0.5em 0 1em 0;
 
   h1 {
     letter-spacing: 2px;
@@ -46,13 +46,23 @@ $content-l-width: 0.31;
 
 .content-l {
   width: percentage($content-l-width);
-  background: rgb(86 88 89 / 6%);
+  background: rgb(86 88 89 / 6%) !important;
+  print-color-adjust: exact;
   min-height: 900px;
   padding: 1em 1em;
+
+  .left-side-box {
+    border-bottom: dashed 1px rgb(86 88 89 / 60%);
+    padding-bottom: 0.2em;
+  }
+
+  .left-side-box:last-child {
+    border-bottom: none;
+  }
 }
 
 @mixin content-font {
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
   text-align: justify;
@@ -81,7 +91,12 @@ $content-l-width: 0.31;
       justify-content: space-between;
       font-size: 0.8em;
       font-weight: 400;
-      text-transform: uppercase;
+      text-transform: capitalize;
+    }
+
+    .job-location {
+      text-transform: none;
+      @include content-font;
     }
 
     .job-desc {
@@ -111,10 +126,12 @@ $content-l-width: 0.31;
       }
 
       .edu-title {
+        font-size: 1.1em;
       }
 
       .edu-uni {
-        font-size: 1.2em;
+        font-size: 1em;
+        font-weight: 700;
       }
 
       .edu-year {
@@ -124,7 +141,7 @@ $content-l-width: 0.31;
     }
 
     li:last-child {
-      margin-bottom: $margin-top-bottom;
+      //margin-bottom: $margin-top-bottom;
     }
   }
 }
@@ -173,8 +190,11 @@ $content-l-width: 0.31;
 
 .skills {
   .skills-content {
-    @include content-font;
+    font-family: 'Gabarito', sans-serif;
     text-align: left;
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.4em;
   }
 }
 

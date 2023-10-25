@@ -15,7 +15,7 @@ function Lang({name, progress}: LanguageEntity ) {
 
 function Langs({langs = []}: { langs?: LanguageEntity[] }) {
     return (
-        <div className="lang">
+        <div className="lang left-side-box">
             <h2 className="point">Languages</h2>
             {langs.map((v) => <Lang {...v}></Lang>)}
         </div>

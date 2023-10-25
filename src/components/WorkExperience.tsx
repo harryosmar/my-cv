@@ -1,12 +1,12 @@
 import {WorkExperienceEntity} from "../entities/data";
 import React from "react";
 
-function WorkExperience({ title, company, dates, responsibilities = []  }: WorkExperienceEntity) {
+function WorkExperience({ title, company, dates, responsibilities = [], location = ""  }: WorkExperienceEntity) {
     return (
         <div className="work-exp">
             <h3 className="job-title">{title}</h3>
             <div className="job-company">
-                <div>{company}</div>
+                <div>{company} {location && <label className="job-location">{`at ${location}`}</label>}</div>
                 <div>{dates}</div>
             </div>
             <div className="job-desc">

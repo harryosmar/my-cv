@@ -6,7 +6,7 @@ import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 function Contact({phone, email, linkedIn}: ContactEntity) {
     return (
-        <div className="contact">
+        <div className="contact left-side-box">
             <h2 className="point">CONTACT</h2>
             <ul>
                 <li><FontAwesomeIcon icon={faMobileAndroidAlt} /> <label className="contact-value"><a href={`tel:${phone}`}>{phone}</a></label></li>
