@@ -92,7 +92,7 @@ export const MyResume: ResumeEntity = {
                 "Prepared Test Cases and run testing for every deployment.",
                 "Involved in developing new system for Web Based such as Travelite, Fix Asset Management System, Sales and Purchase System, and School Administration System."
             ],
-            "location": "Centra Jakarta, Indonesia"
+            "location": "Central Jakarta, Indonesia"
         },
         {
             "title": "Head Of Accounting",
@@ -126,13 +126,15 @@ export const MyResume: ResumeEntity = {
         "Git",
         "C#",
         "javascript",
-        "Jenkins",
+        "CI: Jenkins",
         "MySQL",
         "Cypress.io",
         "Selenium",
         "BDD",
         "Gherkin: cucumber, specflow ",
         "UML",
+        "API Test: Postman",
+        "Performance Test: JMeter",
 
     ],
     "contact": {
