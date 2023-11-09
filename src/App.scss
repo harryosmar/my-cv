@@ -100,7 +100,8 @@ $content-l-width: 0.31;
     }
 
     .job-desc {
-        @include content-font;
+      @include content-font;
+
       ul {
         padding: 0 0 0 1.3em;
       }
@@ -116,7 +117,8 @@ $content-l-width: 0.31;
     margin: 0;
     font-family: 'Kanit', sans-serif;
     font-size: 0.75em;
-    $margin-top-bottom:2em;
+    $margin-top-bottom: 2em;
+
     li {
       font-family: 'Oxygen', sans-serif;
       margin-top: $margin-top-bottom;
@@ -147,31 +149,32 @@ $content-l-width: 0.31;
 }
 
 .lang {
-    .lang-item {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: nowrap;
-      align-items: center;
-      line-height: 2em;
+  .lang-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    line-height: 2em;
 
-      .lang-item-name {
-        font-family: 'Oxygen', sans-serif;
-        font-size: 0.8em;
-        padding: 0 2em 0 0;
-      }
-      .progress-container {
-        border: none;
-      }
-
-      .progress-bar {
-        height: 5px;
-        border-radius: 4px;
-        text-align: center;
-        background: rgb(45 48 49 / 35%);
-        color: white;
-      }
+    .lang-item-name {
+      font-family: 'Oxygen', sans-serif;
+      font-size: 0.8em;
+      padding: 0 2em 0 0;
     }
+
+    .progress-container {
+      border: none;
+    }
+
+    .progress-bar {
+      height: 5px;
+      border-radius: 4px;
+      text-align: center;
+      background: rgb(45 48 49 / 35%);
+      color: white;
+    }
+  }
 }
 
 .profile {
@@ -188,6 +191,12 @@ $content-l-width: 0.31;
   }
 }
 
+.salary {
+  p {
+    @include content-font;
+  }
+}
+
 .skills {
   .skills-content {
     font-family: 'Gabarito', sans-serif;
@@ -199,15 +208,16 @@ $content-l-width: 0.31;
 }
 
 .contact {
-    ul {
-      @include content-font;
-      padding: 0 0 0 0;
-      list-style: none;
-    }
+  ul {
+    @include content-font;
+    padding: 0 0 0 0;
+    list-style: none;
+  }
 
-    li {
-      line-height: 1.8em;
-      .contact-value {
-      }
+  li {
+    line-height: 1.8em;
+
+    .contact-value {
     }
+  }
 }

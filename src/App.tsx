@@ -8,6 +8,7 @@ import Profile from "./components/Profile";
 import Expertise from "./components/Expertise";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Salary from "./components/Salary";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
                         <Edus educations={MyResume.educations}></Edus>
                         <Langs langs={MyResume.languages}></Langs>
                         <Expertise exps={MyResume.expertise}></Expertise>
+                        <Salary {...{...MyResume.salary}}></Salary>
                     </div>
                     <div className="content-r">
                         <Profile description={MyResume.profile}></Profile>
