@@ -85,7 +85,7 @@ export const MyResume: ResumeEntity = {
         },
         {
             "title": "Business Analyst and QA ",
-            "company": "Sentra Solusi Informatika",
+            "company": "Sentra Solusi Informatika (Software House)",
             "dates": "April 2012-June 2022",
             "responsibilities": [
                 "Designed new features, communicated with stakeholder, and prepared documentations.",
@@ -96,7 +96,7 @@ export const MyResume: ResumeEntity = {
         },
         {
             "title": "Head Of Accounting",
-            "company": "Nongsapura Terminal",
+            "company": "Nongsapura Terminal (Ferry Terminal)",
             "dates": "2011-2012",
             "responsibilities": [
                 "Prepared monthly and quaterly Management Report .",
@@ -105,13 +105,23 @@ export const MyResume: ResumeEntity = {
             ],
             "location": "Batam, Indonesia"
         },
-
         {
             "title": "Finance and Accounting",
-            "company": "Panasia Group",
+            "company": "Wita Tour (Travel Agent)",
+            "dates": "2004 -2010",
+            "responsibilities": [
+                "Maintained  general cashier and accounting transactions.",
+                "Prepared  and verified Financial and Accounting reports.",
+            ],
+            "location": "Bandung, Indonesia"
+        },
+        {
+            "title": "Finance and Accounting",
+            "company": "Panasia Group (Textile Industry)",
             "dates": "1999-2004",
             "responsibilities": [
                 "Responsible as Finance and AR Accounting.",
+                "Verified Export documents, export's expenses and commission",
             ],
             "location": "Bandung, Indonesia"
         }
