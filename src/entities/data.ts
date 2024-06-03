@@ -38,7 +38,7 @@ export interface ResumeEntity {
 
 
 export const MyResume: ResumeEntity = {
-    "name": "Harry Osmar Sitohang",
+    "name": "John Wick",
     "role": "Senior Principle Engineer",
     "profile": "Senior Principle Engineer with over 12 years of experience in classified, e-commerce, public sector service, with a proven track record in designing and implementing complex systems. Adept at driving innovation, managing cross-functional teams, and delivering high-impact solutions. Demonstrated expertise in \"microservices architecture, DevOps & CI/CD, Monitoring & Alerting\" coupled with a deep understanding of industry best practices. Always iterate for optimizing processes, reducing costs, and enhancing overall efficiency. Strong communicator and collaborator with a passion for mentoring and developing talent.",
     "educations": [
