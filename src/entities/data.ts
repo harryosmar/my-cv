@@ -26,12 +26,13 @@ export interface ContactEntity {
 }
 
 export interface SalaryEntity {
-    current: string;
+    current?: string;
     expected: string;
 }
 
 export interface ResumeEntity {
     name: string;
+    photo: string;
     role: string;
     profile: string;
     languages?: LanguageEntity[];
@@ -41,12 +42,13 @@ export interface ResumeEntity {
     expertise?: string[],
     skills?: string[],
     contact: ContactEntity,
-    salary: SalaryEntity;
+    salary?: SalaryEntity;
 }
 
 
 export const MyResume: ResumeEntity = {
     "name": "Anggraeni Wisono",
+    "photo": "/ang2.png",
     "role": "Senior QA Engineer",
     "profile": "Senior QA Engineer with over 12 years of experience in travel agent industry and e-Taxation Indonesia, with a proven track record in testing complex systems both manually and automatically. ",
     "educations": [
@@ -56,7 +58,7 @@ export const MyResume: ResumeEntity = {
             "year": "2022-current"
         },
         {
-            "title": "Diploma",
+            "title": "Diploma III Accouting",
             "university": "Polytechnic Of Bandung",
             "year": "1995-1998"
         }
@@ -68,7 +70,7 @@ export const MyResume: ResumeEntity = {
         },
         {
             "name": "English",
-            "progress": 85
+            "progress": 80
         }
     ],
     "experiences": [
@@ -77,9 +79,9 @@ export const MyResume: ResumeEntity = {
             "company": "Qualysoft",
             "dates": "2022-Current",
             "responsibilities": [
-                "Prepare Test Cases for new system at DJP .",
-                "Prepare and maintain automated script for all created test cases"
-
+                "Prepare Test Cases for new system at Digital Tax Administration System.",
+                "Develop and maintain automated script for all created test cases.",
+                "Run performance test using Jmeter for new system at DJP."
             ],
             "location": "Central Jakarta, Indonesia"
         },
@@ -152,8 +154,8 @@ export const MyResume: ResumeEntity = {
         "phone": "+6283872989393",
         "linkedIn": "https://id.linkedin.com/in/anggraeni-wisono-48544746"
     },
-    "salary": {
-        "current": "Rp. 20.700.000,-",
-        "expected": "Rp. 21.700.000,-",
-    },
+    // "salary": {
+    //     "current": "Rp. 20.700.000,-",
+    //     "expected": "Rp. 35.700.000,-",
+    // },
 };

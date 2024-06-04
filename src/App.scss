@@ -4,12 +4,26 @@ body {
   margin: 0 auto; /* Center the content horizontally */
 }
 
+img.photo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
 .letter {
 }
 
+$content-l-width: 0.31;
+
 .header {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+
   text-align: center;
-  padding: 0.5em 0 1em 0;
+  //padding: 0.5em 0 0 0;
+  padding: 0;
 
   h1 {
     letter-spacing: 2px;
@@ -26,6 +40,22 @@ body {
     font-size: 0.9em;
     font-weight: 400;
   }
+
+  .header-l {
+    width: percentage($content-l-width + 0.02);
+    //background: rgb(86 88 89 / 6%) !important;
+
+    img.photo {
+      margin: 1em 0 0 0;
+      position: relative;
+      top: 25px;
+      left: 0;
+    }
+  }
+
+  .header-r {
+    width: percentage(1 - $content-l-width - 0.01);
+  }
 }
 
 .content {
@@ -41,8 +71,6 @@ body {
     text-transform: uppercase;
   }
 }
-
-$content-l-width: 0.31;
 
 .content-l {
   width: percentage($content-l-width);
