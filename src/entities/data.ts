@@ -1,3 +1,5 @@
+import exp from "constants";
+
 export interface WorkExperienceEntity {
     title: string;
     company: string;
@@ -23,8 +25,14 @@ export interface ContactEntity {
     linkedIn: string;
 }
 
+export interface SalaryEntity {
+    current?: string;
+    expected: string;
+}
+
 export interface ResumeEntity {
     name: string;
+    photo: string;
     role: string;
     profile: string;
     languages?: LanguageEntity[];
@@ -34,11 +42,13 @@ export interface ResumeEntity {
     expertise?: string[],
     skills?: string[],
     contact: ContactEntity,
+    salary?: SalaryEntity;
 }
 
 
 export const MyResume: ResumeEntity = {
-    "name": "John Wick",
+    "name": "Harry Osmar Sitohang",
+    "photo": "/6024289.jpeg",
     "role": "Senior Principle Engineer",
     "profile": "Senior Principle Engineer with over 12 years of experience in classified, e-commerce, public sector service, with a proven track record in designing and implementing complex systems. Adept at driving innovation, managing cross-functional teams, and delivering high-impact solutions. Demonstrated expertise in \"microservices architecture, DevOps & CI/CD, Monitoring & Alerting\" coupled with a deep understanding of industry best practices. Always iterate for optimizing processes, reducing costs, and enhancing overall efficiency. Strong communicator and collaborator with a passion for mentoring and developing talent.",
     "educations": [
