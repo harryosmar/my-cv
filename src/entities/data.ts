@@ -90,6 +90,7 @@ export const MyResume: ResumeEntity = {
             "company": "Sentra Solusi Informatika (Software House)",
             "dates": "April 2012-June 2022",
             "responsibilities": [
+                "QA Lead : lead a team of QA engineers or testers. This involves setting goals, assigning tasks, providing guidance, and mentoring team members to ensure they perform at their best",
                 "Designed new features, communicated with stakeholder, and prepared documentations.",
                 "Prepared Test Cases and run testing for every deployment.",
                 "Involved in developing new system for Web Based such as Travelite, Fix Asset Management System, Sales and Purchase System, and School Administration System."
@@ -130,7 +131,8 @@ export const MyResume: ResumeEntity = {
     ],
     "expertise": [
         "QA Manual & Automation : To ensure product quality, plan and do testing up to 70% coverage",
-        "Product Management: Follow the best practice of agile and scrum activity"
+        "Product Management: Follow the best practice of agile and scrum activity",
+        "Business Analyst: Collect And Evaluate data to comprehend business requirements and procedures and pinpoint opportunities for enhancement",
     ],
     "skills": [
         "Jira",
@@ -154,8 +156,8 @@ export const MyResume: ResumeEntity = {
         "phone": "+6283872989393",
         "linkedIn": "https://id.linkedin.com/in/anggraeni-wisono-48544746"
     },
-    // "salary": {
-    //     "current": "Rp. 20.700.000,-",
-    //     "expected": "Rp. 35.700.000,-",
-    // },
+    "salary": {
+        "current": "Rp. 21.500.000,-",
+        "expected": "Rp. 22.500.000,-",
+    },
 };
